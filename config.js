@@ -1,7 +1,7 @@
 const config = {
     apiUrl: "http://localhost:3000/api",
     environment: "development",
-    timeout: 10000
+    timeout: 7500
 };
 
 module.exports = config;
