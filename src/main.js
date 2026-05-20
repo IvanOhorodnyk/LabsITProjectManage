@@ -5,7 +5,8 @@ import posthog from 'posthog-js';
 // Р†РЅС–С†С–Р°Р»С–Р·Р°С†С–СЏ PostHog
 posthog.init('phc_CWvdonji7TCZCjywXkrVLmsSy8sDVhLce2ocd2jLNKyP', {
   api_host: 'https://us.i.posthog.com',
-  person_profiles: 'identified_only'
+  person_profiles: 'identified_only',
+  loaded: (ph) => { console.log('PostHog loaded:', ph.get_distinct_id()); }
 });
 
 // РџРµСЂРµРІС–СЂРєР° Feature Flag
