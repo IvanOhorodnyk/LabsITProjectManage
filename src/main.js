@@ -68,9 +68,21 @@ addTaskBtn.addEventListener('click', () => {
 
 renderTasks();
 
-// Р†РЅС–С†С–Р°Р»С–Р·Р°С†С–СЏ Sentry
+// Р†РЅС–С†С–Р°Р»С–Р·Р°С†С–СЏ Sentry (РїРѕРІРЅР° РєРѕРЅС„С–РіСѓСЂР°С†С–СЏ)
 Sentry.init({
   dsn: "https://f221f30d15f8d4b57a0eb9979c93f607@o4511450220462080.ingest.de.sentry.io/4511450300088400",
+  integrations: [
+    Sentry.browserTracingIntegration(),
+    Sentry.replayIntegration(),
+  ],
   tracesSampleRate: 1.0,
+  replaysSessionSampleRate: 0.1,
+  replaysOnErrorSampleRate: 1.0,
   environment: "development",
+});
+
+Sentry.setUser({
+  id: "1",
+  email: "ivan@example.com",
+  segment: "student"
 });
