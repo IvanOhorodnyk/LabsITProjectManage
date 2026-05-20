@@ -5,8 +5,7 @@ import posthog from 'posthog-js';
 // Р†РЅС–С†С–Р°Р»С–Р·Р°С†С–СЏ PostHog
 posthog.init('phc_CWvdonji7TCZCjywXkrVLmsSy8sDVhLce2ocd2jLNKyP', {
   api_host: 'https://us.i.posthog.com',
-  person_profiles: 'identified_only',
-  loaded: (ph) => { console.log('PostHog loaded:', ph.get_distinct_id()); }
+  person_profiles: 'identified_only'
 });
 
 // РџРµСЂРµРІС–СЂРєР° Feature Flag
@@ -26,6 +25,12 @@ if (appStatus === 'Production') {
 } else {
   envStatusElement.classList.add('dev-mode');
 }
+
+// Global error boundary
+window.onerror = function(msg, src, line, col, error) {
+  console.error('Global error:', msg);
+  return false;
+};
 
 // 2. Р›РѕРіС–РєР° Р·Р°РІРґР°РЅСЊ (LocalStorage)
 const taskInput = document.getElementById('task-input');
