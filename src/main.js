@@ -1,6 +1,7 @@
 // Import CSS so Vite can process it
 import './style.css';
 import posthog from 'posthog-js';
+import * as Sentry from '@sentry/browser';
 
 // Р†РЅС–С†С–Р°Р»С–Р·Р°С†С–СЏ PostHog
 posthog.init('phc_CWvdonji7TCZCjywXkrVLmsSy8sDVhLce2ocd2jLNKyP', {
@@ -25,12 +26,6 @@ if (appStatus === 'Production') {
 } else {
   envStatusElement.classList.add('dev-mode');
 }
-
-// Global error boundary
-window.onerror = function(msg, src, line, col, error) {
-  console.error('Global error:', msg);
-  return false;
-};
 
 // 2. Р›РѕРіС–РєР° Р·Р°РІРґР°РЅСЊ (LocalStorage)
 const taskInput = document.getElementById('task-input');
@@ -72,3 +67,10 @@ addTaskBtn.addEventListener('click', () => {
 });
 
 renderTasks();
+
+// Р†РЅС–С†С–Р°Р»С–Р·Р°С†С–СЏ Sentry
+Sentry.init({
+  dsn: "https://f221f30d15f8d4b57a0eb9979c93f607@o4511450220462080.ingest.de.sentry.io/4511450300088400",
+  tracesSampleRate: 1.0,
+  environment: "development",
+});
