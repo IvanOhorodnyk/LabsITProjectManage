@@ -51,4 +51,6 @@ addTaskBtn.addEventListener('click', () => {
   }
 });
 
+// Initialize
 renderTasks();
+console.log('UniDone Task Manager v0.1.0');
