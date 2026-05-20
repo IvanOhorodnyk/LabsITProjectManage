@@ -68,7 +68,6 @@ addTaskBtn.addEventListener('click', () => {
 
 renderTasks();
 
-// Р†РЅС–С†С–Р°Р»С–Р·Р°С†С–СЏ Sentry (РїРѕРІРЅР° РєРѕРЅС„С–РіСѓСЂР°С†С–СЏ)
 Sentry.init({
   dsn: "https://f221f30d15f8d4b57a0eb9979c93f607@o4511450220462080.ingest.de.sentry.io/4511450300088400",
   integrations: [
@@ -81,8 +80,10 @@ Sentry.init({
   environment: "development",
 });
 
-Sentry.setUser({
-  id: "1",
-  email: "ivan@example.com",
-  segment: "student"
+Sentry.setUser({ id: "1", email: "ivan@example.com", segment: "student" });
+
+// РљРЅРѕРїРєР° РіРµРЅРµСЂР°С†С–С— РїРѕРјРёР»РѕРє
+const breakWorldBtn = document.getElementById('break-world-btn');
+breakWorldBtn.addEventListener('click', () => {
+  throw new Error("Sentry Test Error: Something went wrong!");
 });
