@@ -1,5 +1,7 @@
 # Labs IT Project Manage - MVP
 
+[![CI/CD Pipeline](https://github.com/IvanOhorodnyk/LabsITProjectManage/actions/workflows/ci-cd.yml/badge.svg)](https://github.com/IvanOhorodnyk/LabsITProjectManage/actions/workflows/ci-cd.yml)
+
 ## РћРїРёСЃ С–РґРµС— MVP
 Р¦РµР№ РїСЂРѕС”РєС‚ СЃС‚РІРѕСЂРµРЅРёР№ Сѓ СЂР°РјРєР°С… Р»Р°Р±РѕСЂР°С‚РѕСЂРЅРѕС— СЂРѕР±РѕС‚Рё Р· СѓРїСЂР°РІР»С–РЅРЅСЏ Р†Рў-РїСЂРѕС”РєС‚Р°РјРё. Р™РѕРіРѕ РјРµС‚Р° вЂ” РїСЂРѕРґРµРјРѕРЅСЃС‚СЂСѓРІР°С‚Рё Р±Р°Р·РѕРІС– РЅР°РІРёС‡РєРё СЂРѕР±РѕС‚Рё Р· Git: С–РЅС–С†С–Р°Р»С–Р·Р°С†С–СЋ РїСЂРѕС”РєС‚Сѓ, РЅР°Р»Р°С€С‚СѓРІР°РЅРЅСЏ СЃС‚СЂР°С‚РµРіС–С— СЂРѕР·РіР°Р»СѓР¶РµРЅРЅСЏ (Feature Branch/GitFlow), СЃС‚РІРѕСЂРµРЅРЅСЏ Pull Requests, РїСЂРѕРІРµРґРµРЅРЅСЏ Code Review С‚Р° РІРёСЂС–С€РµРЅРЅСЏ РєРѕРЅС„Р»С–РєС‚С–РІ Р·Р»РёС‚С‚СЏ.
 
