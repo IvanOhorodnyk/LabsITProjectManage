@@ -1,0 +1,39 @@
+{
+  "name": "labsitprojectmanage",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Цей проєкт створений у рамках лабораторної роботи з управління ІТ-проєктами. Його мета — продемонструвати базові навички роботи з Git: ініціалізацію проєкту, налаштування стратегії розгалуження (Feature Branch/GitFlow), створення Pull Requests, проведення Code Review та вирішення конфліктів злиття.",
+  "main": "config.js",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "lint": "eslint .",
+    "test": "jest tests/cart.test.js --coverage",
+    "test:broken": "jest tests/broken.test.js",
+    "test:e2e": "playwright test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://MykolaMelnykSHI@github.com/MykolaMelnykSHI/LabsITProjectManage.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MykolaMelnykSHI/LabsITProjectManage/issues"
+  },
+  "homepage": "https://github.com/MykolaMelnykSHI/LabsITProjectManage#readme",
+  "devDependencies": {
+    "@eslint/js": "^10.0.1",
+    "@playwright/test": "^1.60.0",
+    "eslint": "^10.4.0",
+    "jest": "^30.4.2",
+    "prettier": "^3.8.3",
+    "vite": "^8.0.13"
+  },
+  "dependencies": {
+    "@sentry/browser": "^10.53.1",
+    "posthog-js": "^1.374.2"
+  }
+}
